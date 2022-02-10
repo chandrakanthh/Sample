@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.mysample.R
 import com.example.mysample.databinding.ActivityMainBinding
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun navToHome() {
+        Toast.makeText(context,"chandra",Toast.LENGTH_SHORT).show()
         startActivity(Intent(this, ChatListActivity::class.java))
         finish()
     }
