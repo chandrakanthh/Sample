@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/cals_it"
+        android:title="@string/calls_str"
+        />
+    <item android:id="@+id/profile_it"
+        android:title="@string/profile_str"
+        />
+    <item android:id="@+id/logout_it"
+        android:title="@string/logout_str"
+        />
+    <item android:id="@+id/help_it"
+        android:title="@string/help_str"
+        />
+</menu>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">heart<b>link</b></string>
+    <string name="sign_up_str">Sign up</string>
+    <string name="login_str">login</string>
+    <string name="logout_str">logout</string>
+    <string name="facebook_str">facebook</string>
+    <string name="username_hint_str">username</string>
+    <string name="password_hint_str">password</string>
+    <string name="settings_str">Settings</string>
+    <string name="static_time_str">10:54AM</string>
+    <string name="user_list_str">User List</string>
+    <string name="help_str">Help</string>
+    <string name="profile_str">Profile</string>
+    <string name="calls_str">Calls</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="search_hint_str">search</string>
+    <string name="google_str">google</string>
+    <string name="connectwith_str">Or Connect With:</string>
+    <string name="forget_password_str">Forget Password?</string>
+
+</resources>

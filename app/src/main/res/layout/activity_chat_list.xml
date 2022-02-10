@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".view.ui.ChatListActivity">
+
+            <include layout="@layout/custom_toolbar"
+                android:id="@+id/customlayer"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_bar_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:searchIcon="@drawable/ic_search"
+                app:queryHint="@string/search_hint_str"
+                app:iconifiedByDefault="false"
+                android:inputType="text"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chats_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/chatlist_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_chat_list" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"
+            app:itemTextColor="@color/white"
+            app:itemTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_gravity="start"
+            android:background="@drawable/chatlist_bg"
+            />
+
+        <!--<include layout="@layout/navigation_layout" />-->
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>
